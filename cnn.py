@@ -30,7 +30,7 @@ from keras.models  import load_model
 from keras.preprocessing import image
 import numpy as np
 model=load_model("cnn.h5")
-img=image.load_img(r"/users/apurvaaddula/Desktop/IM-0001-0001 copy.jpeg",target_size=(64,64))
+img=image.load_img(r"/users/DELL/Desktop/IM-0001-0001 copy.jpeg",target_size=(64,64))
 x=image.img_to_array(img)
 x=np.expand_dims(x,axis=0)
 pred=model.predict_classes(x)
